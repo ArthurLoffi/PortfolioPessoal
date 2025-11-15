@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+hr{
+    width: 100%;
+    margin: 20px 0;
+}
+
+
 navbar {
     padding: 0;
     background-color: black;
@@ -26,6 +32,7 @@ navbar a:hover {
 }
 
 main {
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,30 +57,52 @@ main {
     text-align: justify;
 }
 
-.text h2{
+.text h2 {
     font-size: 2rem;
 }
 
-.text p{
+.text p {
+    margin-top: 10px;
     font-size: 1.2rem;
 }
 
+.tecnologias h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
 @media (max-width: 1000px) {
+    navbar a {
+        font-size: 1rem;
+    }
+
     .sobreMim {
         width: 80%;
     }
 
-    .text h2{
+    .text h2 {
         font-size: 1.5rem;
     }
-    
-    .text p{
+
+    .text p {
         width: 100%;
         font-size: 1rem;
+    }
+
+    .tecnologias h2 {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 600px) {
+    navbar{
+        gap: 30px;
+    }
+
+    navbar a {
+        font-size: 1rem;
+    }
+
     .sobreMim {
         width: 90%;
         gap: 20px;
