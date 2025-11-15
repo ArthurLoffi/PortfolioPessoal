@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -14,13 +14,75 @@ navbar {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-navbar a{
+navbar a {
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
 }
 
-navbar a:hover{
+navbar a:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobreMim {
+    display: flex;
+    width: 60%;
+    gap: 40px;
+}
+
+.sobreMim img {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 20px black;
+}
+
+.text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.text h2{
+    font-size: 2rem;
+}
+
+.text p{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1000px) {
+    .sobreMim {
+        width: 80%;
+    }
+
+    .text h2{
+        font-size: 1.5rem;
+    }
+    
+    .text p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobreMim {
+        width: 90%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobreMim img {
+        width: 80%;
+    }
 }
