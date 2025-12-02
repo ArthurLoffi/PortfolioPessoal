@@ -1,48 +1,83 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <script src="script.js"></script>
+    <meta name="description"
+        content="Portfólio de Arthur Oscar — Desenvolvedor Web, PHP, MySQL, JavaScript e projetos IoT.">
+    <meta name="author" content="Arthur Oscar">
+    <meta name="theme-color" content="#000000">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <navbar>
-        <a href="#sobreMim">Sobre Mim</a>
-        <a href="#tecnologias">Tecnologias</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-    </navbar>
-    <main>
-        <div id="sobreMim">
-            <img src="assects/518bd3d5-76e8-4bd8-8b05-268d024de1f6.jpg" alt="Minha Foto">
-            <div class="text">
-                <h2>Sobre Mim</h2>
-                <p>Sou Arthur Oscar, 17 anos, estudante de Desenvolvimento de Sistemas no SENAI integrado ao SESI. Tenho
-                    experiência com PHP, MySQL, HTML/CSS, JavaScript, Git/GitHub e desenvolvimento de sistemas web,
-                    incluindo integração com banco de dados e APIs.
-                    Já atuei por 6 meses em um Centro de Distribuição, desenvolvendo organização, responsabilidade e
-                    capacidade de lidar com rotinas operacionais</p>
+<body class="bg-dark text-white">
+    <main class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-md-6 p-5 d-flex align-items-center">
+                <div>
+                    <h1>Portfólio - Arthur Oscar</h1>
+                    <h2 class="fw-bold mb-3">Sobre Mim</h2>
+                    <p>
+                        Sou Arthur Oscar, 17 anos, estudante de Desenvolvimento de Sistemas no SENAI integrado ao SESI.
+                        Tenho experiência com PHP, MySQL, HTML/CSS, JavaScript, Git/GitHub e desenvolvimento de sistemas
+                        web.
+                        Já atuei por 6 meses em um Centro de Distribuição, desenvolvendo organização, responsabilidade
+                        e capacidade de lidar com rotinas operacionais.
+                    </p>
+                    <hr class="border-secondary">
+                    <h2 class="fw-bold mt-4">Tecnologias</h2>
+                    <div class="d-flex gap-3 flex-wrap mt-3">
+                        <img src="https://img.icons8.com/color/48/html-5--v1.png" />
+                        <img src="https://img.icons8.com/color/48/css3.png" />
+                        <img src="https://img.icons8.com/color/48/javascript--v1.png" />
+                        <img src="https://img.icons8.com/?size=40&id=YrKoPXb4jv9l&format=png" />
+                        <img src="https://img.icons8.com/?size=40&id=13441&format=png" />
+                        <img src="https://img.icons8.com/?size=40&id=TpULddJc4gTh&format=png" />
+                    </div>
+                    <hr class="border-secondary">
+                    <h2 class="fw-bold mt-4">Projetos</h2>
+                    <div class="d-flex flex-column gap-3 mt-3">
+                        <a href="https://github.com/ArthurLoffi/TremVida-SA" class="text-white text-decoration-none">
+                            <div class="p-3 border border-secondary rounded" style="display: flex;">
+                                <img src="assects/tremvida.png" width="50" class="me-2" style="border-radius: 50%;">
+                                <div>
+                                    <h5>Sistema ligado com MySQL e HiveMQ usando PHP</h5>
+                                    Site com dados em tempo real do HiveMQ e CRUD de alertas, usuários e sensores.
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ArthurLoffi/organizandoTabela"
+                            class="text-white text-decoration-none">
+                            <div class="p-3 border border-secondary rounded" style="display: flex;">
+                                <img src="assects/github.png" width="50" class="me-2">
+                                <div>
+                                    <h5>Organizando tabelas em Python</h5>
+                                    Sistema para organizar tabela e exibir os dados na tela.
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ArthurLoffi/TremVida-IoT-SA"
+                            class="text-white text-decoration-none">
+                            <div class="p-3 border border-secondary rounded" style="display: flex;">
+                                <img src="assects/github.png" width="50" class="me-2">
+                                <div>
+                                    <h5>Sistema arduino com placa ESP32</h5>
+                                    Projeto IoT para enviar dados dos sensores ao HiveMQ usando a linguagem C.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="assects/518bd3d5-76e8-4bd8-8b05-268d024de1f6.jpg"
+                    class="img-fluid h-100 w-100 object-fit-cover">
             </div>
         </div>
-        <hr>
-        <div id="tecnologias">
-            <h2>Tecnologias:</h2>
-            <div class="images">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div id="projetos"></div>
     </main>
-    <footer>
-        <div id="contato"></div>
-    </footer>
-    <link rel="stylesheet" href="style.css">
 </body>
 
 </html>
